@@ -6,19 +6,45 @@
   <title>Bootstrapping the Noosphere</title>
   <link rel="icon" type="image/png" href="img/noosphereIcon.png">
 
-  <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+  <meta name="description" content="How to boot up a global fusion of mind and machine">
   <meta name="author" content="Hakim El Hattab">
 
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
-
 
   <link rel="stylesheet" href="revealjs/css/main.css">
   <link rel="stylesheet" href="revealjs/css/theme/default.css" id="theme">
 
   <!-- For syntax highlighting -->
   <link rel="stylesheet" href="revealjs/lib/css/zenburn.css">
+
+  <style>
+    .permanent-link {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1000;
+        font-size: 16px;
+        font-family: sans-serif;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 5px 10px;
+        border-radius: 4px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        transition: opacity 0.3s ease;
+    }
+    .permanent-link:hover {
+        opacity: 1;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    .permanent-link a {
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .permanent-link a:hover {
+        color: #000;
+    }
+  </style>
 
   <script>
     // If the query includes 'print-pdf' we'll use the PDF print sheet
@@ -30,6 +56,10 @@
       <![endif]-->
 </head>
 <body>
+  <!-- Add this somewhere after the opening <body> tag but before the closing </body> tag -->
+  <div class="permanent-link">
+    <a href="https://noosphere.org/" target="_blank">noosphere.org</a>
+  </div>
   <div class="reveal">
     <!-- Used to fade in a background when a specific slide state is reached -->
     <div class="state-background"></div>
